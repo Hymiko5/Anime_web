@@ -1,0 +1,60 @@
+
+.search {
+  width: 500px !important;
+}
+
+.active a{
+  color: yellow !important;
+}
+.card-img-top{
+  max-height: 18rem;
+}
+.movie-group {
+  justify-content: center;
+}
+@media (min-width: 1000px) {
+  .content {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+.sign-in {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .user-card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sign-in {
+    display: none;
+  }
+  .user-card {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sign-in {
+    display: none;
+  }
+  .user-card {
+    width: 90%;
+  }
+}
+.footer {
+  width: 80%;
+  margin: auto
+}

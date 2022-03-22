@@ -1,0 +1,16 @@
+.btn-group.d-flex(role='group')
+  button.btn.btn-danger.btn-lg.btn-block.m-2(type='button') Subbed
+  button.btn.btn-secondary.btn-lg.btn-block.m-2(type='button') Dubbed
+if list
+    .movie-group.d-flex.flex-wrap#list-movies
+      each ele in list.data
+        .card.m-2.user-card
+          img.card-img-top(src=ele.attributes.posterImage.original alt='Card image cap' height='200px')
+          .card-body
+            h5.card-title=ele.attributes.titles.en_jp
+
+.btn-group.d-flex(role='group')
+  button.btn.btn-danger.btn-lg.btn-block.m-2#next-btn(type='button') Next Page >
+
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js', integrity='sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=', crossorigin='anonymous')
+script(async, defer, src='/public/client.js')
